@@ -1,15 +1,16 @@
 <html>
-  <head>
-    <link rel="stylesheet" type="text/css" href="stylesheet.css">
-    <link href='https://fonts.googleapis.com/css?family=Courgette|Cabin+Sketch:400,700' rel='stylesheet' type='text/css'>
+<head>
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  <link href='https://fonts.googleapis.com/css?family=Courgette|Cabin+Sketch:400,700' rel='stylesheet' type='text/css'>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="main.js"></script>
-  </head>
-  <body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+</head>
+
+<body>
   <h1>Giphy API</h1>
 
-  <div id="show">
+  <div class="container">
     <form id="gif-search">
       <div class="one-half column">
         <label for="search-term">Search Term</label>
@@ -20,6 +21,30 @@
     </form>
   </div>
 
-  </body>
+    <div id="result-container">
+    <div id="result">
+    </div>
+  </div>
+
+  <script src="lodash.js"></script>
+  <script type="text/template" id="results-template">
+    <div id="results_container">
+      <table id ="results">
+        <tr>
+          <td>Bitly URL</td>
+          <td><%= bitly_gif_url %></td>
+        </tr>
+        <tr>
+          <td>Rating</td>
+          <td><%= rating %></td>
+        </tr>
+        <tr>
+          <td><img class="gif" src="<%= img_src %>"></td>
+        </tr>
+      </table>
+    </div>
+  </script>
+  <script src="main.js"></script>
+</body>
 </html>
 

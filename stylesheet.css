@@ -10,5 +10,8 @@ h1 {
   font-size: 20px;
 }
 /*font-family: 'Courgette', cursive;*/
-
+#results {
+  font-family: 'Courgette', cursive;
+  font-size: 20px;
+}
 
