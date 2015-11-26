@@ -5,13 +5,35 @@ h1 {
   margin-bottom: 40px;
 }
 
+p {
+  font-family: 'Courgette', cursive;
+  font-size: 15px;
+}
+
 #show {
   font-family: 'Courgette', cursive;
-  font-size: 20px;
+  font-size: 14px;
 }
-/*font-family: 'Courgette', cursive;*/
+
 #results {
   font-family: 'Courgette', cursive;
-  font-size: 20px;
+  font-size: 14px;
+  border: 2px;
+  border-color: black;
 }
+
+.text-div {
+  font-family: 'Courgette', cursive;
+  font-size: 14px;
+  position: relative;
+  float: left;
+  border-color: black;
+  border-radius: 5px;
+  border-style: solid;
+  padding: 0;
+  margin: 12px;
+  border-width: thin;
+  background-color: rgb(1, 150, 136);
+}
+
 

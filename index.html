@@ -10,41 +10,49 @@
 <body>
   <h1>Giphy API</h1>
 
+  <p>Welcome to the Groovy Giphy API!! Enter a search term to find GIFs, because, why the fuck not?</p>
+
   <div class="container">
     <form id="gif-search">
       <div class="one-half column">
-        <label for="search-term">Search Term</label>
-        <input class="search-term" type="text" id="search-term" required>
+        <label for="search-term"></label>
+        <input class="search-term" type="text" id="search-term" placeholder="Search for a GIF" required>
         <input type="submit" id="search-button">
         <!-- <button type="reset" id="clear-button">Clear</button> -->
       </div>
     </form>
   </div>
 
-    <div id="result-container">
     <div id="result">
     </div>
-  </div>
 
   <script src="lodash.js"></script>
-  <script type="text/template" id="results-template">
-    <div id="results_container">
-      <table id ="results">
-        <tr>
-          <td>Bitly URL</td>
-          <td><%= bitly_gif_url %></td>
-        </tr>
-        <tr>
-          <td>Rating</td>
-          <td><%= rating %></td>
-        </tr>
-        <tr>
-          <td><img class="gif" src="<%= img_src %>"></td>
-        </tr>
-      </table>
-    </div>
-  </script>
+
+  <table id ="results">
+    <script type="text/template" id="results-template">
+      <div class="text-div">
+        <img src="<%= img_src %>">
+        <p>Bitly URL: <%= bitly_gif_url %></p>
+        <p>Rated: <%= rating %></p>
+      </div>
+    </script>
+  </table>
+
   <script src="main.js"></script>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
